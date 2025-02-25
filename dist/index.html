@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+  <script src="/style.e308ff8e.js"></script></head>
+  <body>
+    <div class="container">
+      <button id="get">Отримати Дані</button>
+    </div>
+    <div class="modal_create-movie">
+      <form class="form-create">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="genre" placeholder="genre">
+        <input type="text" name="director" placeholder="director">
+        <input type="text" name="year" placeholder="year">
+        <button class="submit" type="submit">Додати Дані</button>
+      </form>
+    </div>
+
+    <div class="modal" id="modal">
+      <form id="editForm">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="genre" placeholder="genre">
+        <input type="text" name="director" placeholder="director">
+        <input type="text" name="year" placeholder="year">
+        <button type="button" id="close">Отмена</button>
+        <button type="submit" id="edit">Оновити</button>
+      </form>
+    </div>
+
+    <!-- replace -->
+    <div class="modal-put" id="modal-put">
+      <form id="replaceForm">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="genre" placeholder="genre">
+        <input type="text" name="director" placeholder="director">
+        <input type="text" name="year" placeholder="year">
+        <button type="button" id="close-put">Отмена</button>
+        <button type="submit" id="update-put">Перезаписати</button>
+      </form>
+    </div>
+
+    <div class="container-movies" id="moviesList"></div>
+    <script src="/main.1f19ae8e.js"></script>
+  </body>
+</html>

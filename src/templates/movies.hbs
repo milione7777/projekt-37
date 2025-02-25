@@ -1,0 +1,29 @@
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Назва</th>
+      <th>Жанр</th>
+      <th>Режисер</th>
+      <th>Рік</th>
+      <th>Дії</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each this}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{this.title}}</td>
+        <td>{{this.genre}}</td>
+        <td>{{this.director}}</td>
+        <td>{{this.year}}</td>
+        <td class="btn-list">
+          <button  data-action="update" data-id="{{this.id}}">Оновити</button>
+          <button data-action="edit" data-id="{{this.id}}">Редагувати</button>
+          <button data-action="delete" data-id="{{this.id}}">Видалити</button>
+        </td>
+
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

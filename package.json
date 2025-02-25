@@ -1,0 +1,16 @@
+{
+  "description": "",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "json-server": "^1.0.0-beta.3",
+    "parcel": "^2.13.3",
+    "server": "^1.0.41"
+  },
+  "scripts": {
+    "server": "npx json-server db.json",
+    "dev": "parcel src/*.html"
+  },
+  "devDependencies": {
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
+  }
+}
