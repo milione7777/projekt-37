@@ -8,7 +8,7 @@
   },
   "scripts": {
     "server": "npx json-server db.json",
-    "dev": "parcel src/*.html"
+    "dev": "parcel *.html"
   },
   "devDependencies": {
     "parcel-plugin-handlebars-precompile": "^1.0.2"
